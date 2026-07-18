@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#05070f,#0b1f45,#0f4c81);
+    color:#ffffff;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+header h1{
+    color:#5ab3ff;
+    text-shadow:0 0 15px rgba(90,179,255,.8);
+}
+
+nav{
+    display:flex;
+    gap:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#2b8fff;
+}
+
+/* Main */
+
+main{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+}
+
+/* Cards */
+
+.profile-card,
+.account-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:25px;
+}
+
+.profile-card h2,
+.account-card h2{
+    color:#5ab3ff;
+    margin-bottom:20px;
+}
+
+.profile-card p{
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+/* Input */
+
+input{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:none;
+    border-radius:10px;
+    background:rgba(255,255,255,.12);
+    color:white;
+    outline:none;
+    transition:.3s;
+}
+
+input::placeholder{
+    color:#cfcfcf;
+}
+
+input:focus{
+    border:1px solid #5ab3ff;
+    box-shadow:0 0 15px rgba(90,179,255,.4);
+}
+
+/* Buttons */
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:5px;
+    border:none;
+    border-radius:10px;
+    background:#2b8fff;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#53a8ff;
+    transform:translateY(-2px);
+    box-shadow:0 0 18px rgba(83,168,255,.45);
+}
+
+/* Danger Button */
+
+.danger{
+    background:#e53935;
+    margin-top:15px;
+}
+
+.danger:hover{
+    background:#ff4d4d;
+    box-shadow:0 0 18px rgba(255,77,77,.5);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#bbbbbb;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#08111f;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2b8fff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#53a8ff;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    nav{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    main{
+        width:95%;
+    }
+
+}
