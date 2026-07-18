@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vent - Home</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header>
+
+    <h1>Vent</h1>
+
+    <nav>
+
+        <a href="app.html">Home</a>
+        <a href="settings.html">Settings</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="welcome">
+
+        <h2>
+            Welcome,
+            <span id="username">User</span> 👋
+        </h2>
+
+        <p>
+            What's on your mind today?
+        </p>
+
+    </section>
+
+
+    <section class="create-post">
+
+        <textarea
+            id="postContent"
+            placeholder="Write your thoughts..."
+            maxlength="1000"
+        ></textarea>
+
+        <button id="postButton">
+            Post
+        </button>
+
+    </section>
+
+
+    <section class="posts">
+
+        <h2>Recent Posts</h2>
+
+        <div id="postsContainer">
+
+            <!-- Posts akan ditampilkan oleh script.js -->
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        © 2026 Vent
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
