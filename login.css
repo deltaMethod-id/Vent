@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:linear-gradient(135deg,#05070f,#0b1f45,#0f4c81);
+    color:white;
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+}
+
+.login-box{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+.login-box h1{
+    text-align:center;
+    color:#5ab3ff;
+    margin-bottom:10px;
+    text-shadow:0 0 15px rgba(90,179,255,.8);
+}
+
+.login-box p{
+    text-align:center;
+    color:#d6d6d6;
+    margin-bottom:30px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:none;
+    border-radius:10px;
+    background:rgba(255,255,255,.12);
+    color:white;
+    outline:none;
+    transition:.3s;
+}
+
+input::placeholder{
+    color:#cfcfcf;
+}
+
+input:focus{
+    border:1px solid #5ab3ff;
+    box-shadow:0 0 15px rgba(90,179,255,.4);
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#2b8fff;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#53a8ff;
+    transform:translateY(-2px);
+    box-shadow:0 0 18px rgba(83,168,255,.45);
+}
+
+.links{
+    margin-top:25px;
+    text-align:center;
+}
+
+.links a{
+    color:#5ab3ff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.links a:hover{
+    color:white;
+    text-shadow:0 0 10px #5ab3ff;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#08111f;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2b8fff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#53a8ff;
+}
+
+@media(max-width:480px){
+
+    .login-box{
+        padding:25px;
+    }
+
+    .login-box h1{
+        font-size:30px;
+    }
+
+}
